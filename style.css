@@ -92,8 +92,6 @@ body { background: var(--light); color: var(--dark); }
 .user-reviews { margin-top: 20px; padding-top: 15px; border-top: 1px solid #eee; font-style: italic; font-size: 13px; }
 .stars { color: #ffb800; display: block; margin-bottom: 5px; }
 
-.footer { padding: 40px; text-align: center; font-size: 12px; color: #999; }
-
 /* Nova Galeria Otimizada */
 .product-gallery-fast {
     display: grid;
@@ -165,4 +163,43 @@ body { background: var(--light); color: var(--dark); }
     font-size: 40px;
     font-weight: bold;
     cursor: pointer;
+}
+
+/* rodapé */
+
+footer {
+    display: flex;
+    background-color: #f9f9f9;
+    padding: 40px 20px;
+    justify-content: space-between;
+    border-top: 1px solid #ddd;
+    align-items: center;
+}
+
+.security-badges {
+    margin-bottom: 20px;
+}
+
+.security-badges img {
+    height: 30px;
+    margin: 0 10px;
+    filter: grayscale(20%); /* Fica mais elegante */
+}
+
+.security-badges p {
+    font-size: 12px;
+    color: #666;
+    margin-top: 10px;
+}
+
+.footer-info p {
+    font-size: 11px;
+    color: #999;
+    margin: 5px 0;
+}
+
+.footer-info a {
+    color: #999;
+    text-decoration: none;
+    display: inline-block;
 }
