@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TrinityVibe | Tecnologia que Conecta</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="logo">TRINITY<span>VIBE</span></div>
+        <div class="promo-badge">FRETE GRÁTIS!</div>
+    </header>
+
+    <main class="hero">
+        <h1>O Futuro na sua <span class="text-gradient">Mão</span>.</h1>
+        <p>Produtos selecionados para quem vive no ritmo do amanhã.</p>
+    </main>
+
+    <section class="product-grid">
+        <article class="product-card highlight">
+            <div class="video-container">
+                <video autoplay muted loop playsinline>
+                    <source src="fone.mp4" type="video/mp4">
+                </video>
+            </div>
+
+            <div class="product-gallery-fast">
+                <img src="foneimg/f1.avif" alt="Detalhe do fone">
+                <img src="foneimg/f2.avif" alt="Tela touch ligada">
+                <img src="foneimg/f4.avif" alt="Fone com case fechada">
+                <img src="foneimg/f5.avif" alt="Fone em uso">
+                <img src="foneimg/f6.avif" alt="Fone em uso com microfone">
+                <img src="foneimg/f7.avif" alt="fone em uso na orelha">
+            </div>
+            <div class="product-info">
+                <span class="tag">MAIS VENDIDO</span>
+                <h2>PBUDS ANC LX 10</h2>
+                <p>Case Touch + Cancelamento de Ruído Ativo.</p>
+                <div class="price">
+                    <span class="old-price">R$ 347,00</span>
+                    <span class="current-price">R$ 219,90</span>
+                </div>
+                <a href="LINK_CHECKOUT_FONE" class="buy-btn">COMPRAR AGORA</a>
+                
+                <div class="user-reviews">
+                    <span class="stars">★★★★★</span>
+                    <p>"O touch é muito fluido, melhor compra!"</p>
+                </div>
+                <div class="user-reviews">
+                    <span class="stars">★★★★★</span>
+                    <p>"Produto com qualidade excepcional, falando da case do fone que é um dos pontos em destaque, nós temos uma tela que responde rápido aos toques, varias funções como ativar o cancelamento de ruido que por sinal é muito bom e tem varias configurações, cronometro, timer, lanterna e vários temas diferentes. Falando dos fones é o melhor que eu já testei até hoje, excelente encaixe mesmo balançando a cabeça eles não caem, qualidade sonora excepcional, graves presentes, som muito bonito e encorpado, o design é muito agradável é aquele fone que você pode usar o dia inteiro e não vai chegar no final do dia com dor no ouvido. Ele tem a opção de cancelamento ativo de ruido e também o modo ambiente que permite você ouvir as pessoas mesmo usando o fone, excelente custo beneficio e vale super a pena a compra.!"</p>
+                </div>
+                <div class="user-reviews">
+                    <span class="stars">★★★★★</span>
+                    <p>"A qualidade do áudio é absurda !.
+É o melhor fone que já usei.
+Graves fortes e sem distorção, médios e agudos perfeitos. O cancelamento de ruído funciona muito bem. Realmente corta o barulho externo.
+Estou satisfeito !."</p>
+                </div>
+                <div class="user-reviews">
+                    <span class="stars">★★★★★</span>
+                    <p>"Realmente achei incrível, além do som que e excelente ele tem um cancelamento de ruído que eu simplesmente achei incrível, a case tem várias opções de ajustes e predefiniçoes (sem falar que dá pra usar até como lanterna, não tem delay oque mim ajudou muito na hora de jogar e outra coisa que achei muito bom foi que usei ele por horas e não incomodou em nada, veio também 4 borrachas extras, a bateria do fone dura várias horas sem falar a bateria da case, simplesmente espetacular, o suporte da loja foi incrível, (a tela tem uma qualidade muito boa e não tem atraso ao tocar nela 😃 vou comprar novamente em breve.!"</p>
+                </div>
+                <div class="user-reviews">
+                    <span class="stars">★★★★</span>
+                    <p>"Tem tudo bom pelo seu valor.
+Só a bateria da caixinha que dura pouco. Mais da para usar um dia inteiro. Qualidade do som muito boa. Com bons graves."</p>
+            </div>
+        </article>
+
+        <article class="product-card empty">
+            <div class="placeholder">
+                <span>ITEM 2</span>
+                <p>Em breve na TrinityVibe</p>
+            </div>
+        </article>
+
+        <article class="product-card empty">
+            <div class="placeholder">
+                <span>ITEM 3</span>
+                <p>Em breve na TrinityVibe</p>
+            </div>
+        </article>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2026 TrinityVibe Store - Porto Alegre/RS</p>
+    </footer>
+
+    <div id="imageModal" class="modal" onclick="this.style.display='none'">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="imgFull">
+</div>
+
+<script>
+    // Função para abrir a imagem
+    const modal = document.getElementById("imageModal");
+    const modalImg = document.getElementById("imgFull");
+    
+    // Seleciona todas as fotos da sua galeria
+    document.querySelectorAll('.product-gallery-fast img').forEach(img => {
+        img.onclick = function() {
+            modal.style.display = "flex";
+            modalImg.src = this.src;
+        }
+    });
+</script>
+</body>
+</html>

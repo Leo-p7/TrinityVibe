@@ -1,0 +1,162 @@
+:root {
+    --primary: #ff0050; /* Rosa TikTok */
+    --accent: #25d366; /* Verde Conversão */
+    --dark: #0a0a0a;
+    --light: #f4f4f4;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Inter', sans-serif; }
+
+body { background: var(--light); color: var(--dark); }
+
+.navbar {
+    background: white;
+    padding: 15px;
+    text-align: center;
+    border-bottom: 2px solid #eee;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo { font-size: 24px; font-weight: 900; letter-spacing: -1px; }
+.logo span { color: var(--primary); }
+
+.promo-badge { font-size: 11px; font-weight: bold; margin-top: 5px; color: #666; }
+
+.hero { padding: 40px 20px; text-align: center; }
+.text-gradient { background: linear-gradient(90deg, #ff0050, #00f2ea); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+
+.product-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.product-card {
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+
+.video-container {
+    width: 100%;
+    max-width: 400px; /* Isso impede que o vídeo fique gigante no computador */
+    margin: 0 auto;   /* Centraliza o vídeo na tela */
+    padding: 15px;    /* Dá um respiro nas laterais */
+}
+
+.video-container video {
+    width: 100%;
+    height: 400px;      /* Aqui você controla o comprimento. Teste com 400px se quiser menor ainda */
+    object-fit: cover;  /* Isso faz o vídeo preencher o espaço sem achatar a imagem */
+    object-position: center; /* Mantém o foco no meio do vídeo */
+    border-radius: 20px;
+    display: block;
+}
+
+.product-info { padding: 20px; }
+.tag { background: var(--primary); color: white; padding: 4px 10px; border-radius: 5px; font-size: 10px; font-weight: bold; }
+
+.price { margin: 15px 0; }
+.old-price { text-decoration: line-through; color: #999; font-size: 14px; }
+.current-price { display: block; font-size: 32px; font-weight: 900; color: var(--accent); }
+
+.buy-btn {
+    display: block;
+    background: var(--accent);
+    color: white;
+    text-align: center;
+    padding: 18px;
+    border-radius: 12px;
+    text-decoration: none;
+    font-weight: 900;
+    font-size: 18px;
+}
+
+/* Estilo para os cards vazios */
+.empty { border: 2px dashed #ccc; background: #fafafa; }
+.placeholder { padding: 60px 20px; text-align: center; color: #999; }
+.placeholder span { font-size: 24px; font-weight: bold; }
+
+.user-reviews { margin-top: 20px; padding-top: 15px; border-top: 1px solid #eee; font-style: italic; font-size: 13px; }
+.stars { color: #ffb800; display: block; margin-bottom: 5px; }
+
+.footer { padding: 40px; text-align: center; font-size: 12px; color: #999; }
+
+/* Nova Galeria Otimizada */
+.product-gallery-fast {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 fotos por linha para não ocupar muito espaço */
+    gap: 8px;
+    padding: 0 15px 15px; /* Alinhado com o respiro do vídeo */
+    background: white;
+}
+
+.product-gallery-fast img {
+    width: 100%;
+    aspect-ratio: 1 / 1; /* Mantém todas quadradinhas */
+    object-fit: cover;
+    border-radius: 8px;
+    border: 1px solid #eee;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+/* Efeito ao clicar/passar o mouse */
+.product-gallery-fast img:active {
+    transform: scale(0.95);
+}
+
+/* Ajuste para a 7ª imagem não ficar sozinha e feia */
+.product-gallery-fast img:last-child {
+    grid-column: span 1; 
+}
+
+/* Ajuste fino no card para as fotos não colarem no vídeo */
+.product-card.highlight {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Estilo do Modal (Fundo) */
+.modal {
+    display: none; /* Escondido por padrão */
+    position: fixed;
+    z-index: 2000; /* Fica acima da Navbar */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.9); /* Fundo preto transparente */
+    align-items: center;
+    justify-content: center;
+}
+
+/* A imagem que vai crescer */
+.modal-content {
+    max-width: 90%;
+    max-height: 80%;
+    border-radius: 10px;
+    animation: zoom 0.3s; /* Efeito suave de abertura */
+}
+
+@keyframes zoom {
+    from {transform: scale(0.7)} 
+    to {transform: scale(1)}
+}
+
+/* Botão de fechar */
+.close {
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
