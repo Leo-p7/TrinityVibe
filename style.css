@@ -296,3 +296,83 @@ footer {
     font-weight: bold; 
     color: #ff0050; /* Cor do seu gradiente */
 }
+
+.product-image img {
+    width: 100%; /* Ela ocupa 100% do card, que tem 500px */
+    height: auto; /* Mantém a proporção sem achatar */
+    max-height: 400px;
+    object-fit: contain; /* Garante que o relógio apareça inteiro */
+    display: block;
+    padding: 20px;
+}
+
+/* Ajuste Rodapé para não bugar no PC/Celular */
+footer {
+    display: flex;
+    flex-direction: column; /* Empilha os itens para não esmagar */
+    background-color: #f9f9f9;
+    padding: 40px 20px;
+    border-top: 1px solid #ddd;
+    text-align: center;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.security-badges {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.security-badges img {
+    height: 25px;
+}
+
+/* Ajuste de suporte */
+.support-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+    .product-grid {
+        max-width: 100%;
+        padding: 10px;
+    }
+}
+
+/* Animação de atenção no botão de compra */
+@keyframes pulse {
+    0% { transform: scale(1); box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7); }
+    70% { transform: scale(1.05); box-shadow: 0 0 0 10px rgba(37, 211, 102, 0); }
+    100% { transform: scale(1); }
+}
+
+.buy-btn {
+    animation: pulse 2s infinite; /* Faz o botão pulsar suavemente */
+    transition: 0.3s;
+}
+
+.buy-btn:hover {
+    filter: brightness(1.1);
+    transform: translateY(-2px);
+}
+
+/* Melhoria na exibição de vídeos para não travar o carregamento */
+video {
+    background: #000; /* Fundo preto enquanto o vídeo não carrega */
+}
+
+/* Ajuste fino para o texto gradiente brilhar mais */
+.text-gradient {
+    font-weight: 900;
+    text-transform: uppercase;
+}

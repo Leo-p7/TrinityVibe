@@ -35,115 +35,87 @@
 
     <section class="product-grid">
         <article class="product-card highlight">
-            <div class="video-container">
-                <video autoplay muted loop playsinline>
-                    <source src="fone.mp4" type="video/mp4">
-                </video>
-            </div>
-
-            <div class="product-gallery-fast">
-                <img src="foneimg/f1.avif" alt="Detalhe do fone">
-                <img src="foneimg/f2.avif" alt="Tela touch ligada">
-                <img src="foneimg/f4.avif" alt="Fone com case fechada">
-                <img src="foneimg/f5.avif" alt="Fone em uso">
-                <img src="foneimg/f6.avif" alt="Fone em uso com microfone">
-                <img src="foneimg/f7.avif" alt="fone em uso na orelha">
-            </div>
-            <div class="product-info">
-                <span class="tag">MAIS VENDIDO</span>
-                <h2>PBUDS ANC LX 10</h2>
-                <p>Case Touch + Cancelamento de Ruído Ativo.</p>
-                <div class="price">
-                    <span class="old-price">R$ 220,00</span>
-                    <span class="current-price">R$ 197,00</span>
-                </div>
-                <a href="https://trinityvibe.pay.yampi.com.br/r/6TAS337H70" class="buy-btn">COMPRAR AGORA</a>
-            <div class="social-proof-simple">
-                <p>⭐⭐⭐⭐⭐ <strong>4.9/5</strong> - Mais de 250 clientes satisfeitos em todo o Brasil.</p>
-                <p style="font-size: 12px; color: #666;">Compra Garantida | Entrega com Rastreio</p>
-            </div>    
-              
-        </article>
-
-        <section id="smartwatch-ultra" class="product-section">
-    <div class="product-container">
-        <div class="product-image">
-            <img src="" alt="W-69 Pro Max Ultra">
+        <div class="video-container">
+            <video autoplay muted loop playsinline>
+                <source src="fone.mp4" type="video/mp4">
+            </video>
         </div>
-        
+        <div class="product-gallery-fast">
+            <img src="foneimg/f1.avif" alt="F1"><img src="foneimg/f2.avif" alt="F2">
+            <img src="foneimg/f4.avif" alt="F4"><img src="foneimg/f5.avif" alt="F5">
+        </div>
         <div class="product-info">
-            <span class="badge">Lançamento</span>
-            <h2 class="text-gradient">Smartwatch W-69 Pro Max Ultra</h2>
-            <p class="subtitle">Série 10 | Acabamento em Titânio | 49mm</p>
-            
-            <ul class="features-list">
-                <li><strong>Material Premium:</strong> Caixa em Titânio Prateado (Resistência Extrema).</li>
-                <li><strong>Tela Gigante:</strong> 2,02 polegadas de alta definição.</li>
-                <li><strong>Conectividade:</strong> GPS Integrado, NFC e Bluetooth 5.2.</li>
-                <li><strong>Saúde Completa:</strong> ECG, Batimentos, Pressão e Oxigênio.</li>
-                <li><strong>Pulseira Náilon:</strong> Estilo Trail, ultra confortável e ajustável.</li>
-                <li><strong>Certificado:</strong> Homologação ANATEL Nº 37242214637.</li>
-            </ul>
-
-            <div class="price-container">
-                <span class="old-price">R$ 397,00</span>
-                <span class="new-price">R$ 247,00</span>
-                <p class="installments">ou 12x de R$ 24,80</p>
+            <span class="tag">MAIS VENDIDO</span>
+            <h2>PBUDS ANC LX 10</h2>
+            <p>Case Touch + Cancelamento de Ruído Ativo + Cor: Preto</p>
+        <ul class="features-list" style="list-style: none; text-align: left; font-size: 13px; margin-bottom: 15px;">
+            <li>✅ Microfone Integrado para Chamadas Claras</li>
+            <li>✅ Bluetooth: 5.4 e Cancelamento de Ruído (ANC)</li>
+            <li>✅ Estojo com alto-falante</li>
+            <li>✅ Qualidade de Áudio Imbatível</li>
+            <li>✅ Bateria de Longa Duração com Estojo de Carregamento</li>
+        </ul>
+            <div class="price">
+                <span class="old-price">R$ 220,00</span>
+                <span class="current-price">R$ 197,00</span>
             </div>
-
-            <a href="SEU_LINK_DA_YAMPI_AQUI" class="buy-btn">GARANTIR O MEU ULTRA</a>
+            <a href="https://trinityvibe.pay.yampi.com.br/r/6TAS337H70" class="buy-btn">COMPRAR AGORA</a>
+            <div class="social-proof-simple">
+                <p>⭐⭐⭐⭐⭐ 4.9/5 - +250 clientes satisfeitos.</p>
+            </div>
         </div>
+    </article>
+
+<article class="product-card">
+    <div class="product-image">
+        <img src="smartchwatch/relogio.avif" alt="W-69 Pro Max Ultra">
     </div>
-</section>
 
-        <article class="product-card empty">
-            <div class="placeholder">
-                <span>ITEM 3</span>
-                <p>Em breve na TrinityVibe</p>
-            </div>
-        </article>
-    </section>
+    <div class="product-gallery-fast">
+        <img src="smartchwatch/client1.avif" alt="Lateral">
+        <img src="smartchwatch/client2.avif" alt="Sensor">
+        <img src="smartchwatch/client3.avif" alt="Pulseira">
+        <img src="smartchwatch/client4.avif" alt="Tela">
+    </div>
 
-    <div id="imageModal" class="modal" onclick="this.style.display='none'">
-    <span class="close">&times;</span>
-    <img class="modal-content" id="imgFull">
-</div>
-
-<script>
-    // Função para abrir a imagem
-    const modal = document.getElementById("imageModal");
-    const modalImg = document.getElementById("imgFull");
-    
-    // Seleciona todas as fotos da sua galeria
-    document.querySelectorAll('.product-gallery-fast img').forEach(img => {
-        img.onclick = function() {
-            modal.style.display = "flex";
-            modalImg.src = this.src;
-        }
-    });
-</script>
-
-<section id="suporte" class="support-section">
-    <div class="container">
-        <h2 class="text-gradient">Suporte TrinityVibe</h2>
-        <p>Precisa de ajuda? Nossa equipe está pronta para te atender.</p>
+    <div class="product-info">
+        <span class="tag" style="background: #00f2ea; color: #000;">LANÇAMENTO</span>
+        <h2 class="text-gradient">W-69 Pro Max Ultra</h2>
+        <p style="font-size: 13px; color: #666; margin-bottom: 10px;">Série 10 | Titânio | 49mm</p>
         
-        <div class="support-cards">
-            <div class="support-card disabled">
-            <img src="https://img.icons8.com/color/48/whatsapp--v1.png" alt="WhatsApp">
-            <h3>WhatsApp</h3>
-            <p>Estamos preparando nosso canal de atendimento exclusivo.</p>
-             <span class="coming-soon">EM BREVE</span>
-        </div>
-            </a>
+        <ul class="features-list" style="list-style: none; text-align: left; font-size: 13px; margin-bottom: 15px;">
+            <li>✅ Caixa em Titânio Prateado</li>
+            <li>✅ GPS e NFC Integrados</li>
+            <li>✅ Resistência à Água 5ATM</li>
+            <li>✅ Tela AMOLED de 2.02"</li>
+            <li>✅ Monitoramento Avançado de Saúde</li>
+            <li>✅ Bateria de Longa Duração e Comando de Voz</li>
+            <li>✅ Compatível com Android</li>
+        </ul>
 
-            <a href="mailto:suporte@trinityvibe.com.br" class="support-card">
-                <img src="https://img.icons8.com/fluency/48/mail.png" alt="E-mail">
-                <h3>E-mail</h3>
-                <p>Respondemos em até 24h úteis</p>
-                <span>Enviar mensagem</span>
-            </a>
+        <div class="price">
+            <span class="old-price">R$ 229,90</span>
+            <span class="current-price">R$ 198,00</span>
         </div>
+        <a href="https://trinityvibe.pay.yampi.com.br/r/GHXWFSRSUH" class="buy-btn">GARANTIR O MEU</a>
+    </div>
+</article>
+
+<div class="support-cards">
+    <div class="support-card disabled">
+        <img src="https://img.icons8.com/color/48/whatsapp--v1.png" alt="WhatsApp">
+        <h3>WhatsApp</h3>
+        <p>Em breve canal exclusivo.</p>
+        <span class="coming-soon">EM BREVE</span>
+    </div>
+
+    <a href="mailto:suporte.trinityvibe@gmail.com" class="support-card">
+        <img src="https://img.icons8.com/fluency/48/mail.png" alt="E-mail">
+        <h3>E-mail</h3>
+        <p>Respondemos em até 24h úteis</p>
+        <span>Enviar mensagem</span>
+    </a>
+</div>
     </div>
 </section>
 
