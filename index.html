@@ -147,5 +147,28 @@
         </div>
     </div>
 </footer>
+<div id="imageModal" class="modal" onclick="this.style.display='none'">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="imgFull">
+</div>
+
+<script>
+        const modal = document.getElementById("imageModal");
+        const modalImg = document.getElementById("imgFull");
+        
+        // Essa função "escuta" qualquer clique na página
+        document.addEventListener('click', function (e) {
+            // Se o clique for em uma imagem dentro de uma galeria ou na imagem principal
+            if (e.target.closest('.product-gallery-fast img') || e.target.closest('.product-image img')) {
+                modal.style.display = "flex";
+                modalImg.src = e.target.src;
+            }
+        });
+
+        // Fecha o modal ao clicar no 'X'
+        document.querySelector('.close').onclick = function() {
+            modal.style.display = "none";
+        };
+</script>
 </body>
 </html>
