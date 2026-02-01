@@ -7,11 +7,26 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<header class="main-header">
+    <div class="header-container">
+        <div class="logo">
+            <h2 class="text-gradient">TrinityVibe</h2>
+        </div>
+        
+        <nav class="main-menu">
+            <ul>
+                <li><a href="#home">Início</a></li>
+                <li><a href="#produtos">Produtos</a></li>
+                <li><a href="#rastreio">Rastreio</a></li>
+                <li><a href="#suporte">Suporte</a></li>
+            </ul>
+        </nav>
 
-    <header class="navbar">
-        <div class="logo">TRINITY<span>VIBE</span></div>
-        <div class="promo-badge">FRETE GRÁTIS!</div>
-    </header>
+        <div class="header-icons">
+            <span class="cart-icon">🛒</span>
+        </div>
+    </div>
+</header>
 
     <main class="hero">
         <h1>O Futuro na sua <span class="text-gradient">Mão</span>.</h1>
@@ -104,19 +119,55 @@ Só a bateria da caixinha que dura pouco. Mais da para usar um dia inteiro. Qual
     });
 </script>
 
+<section id="suporte" class="support-section">
+    <div class="container">
+        <h2 class="text-gradient">Suporte TrinityVibe</h2>
+        <p>Precisa de ajuda? Nossa equipe está pronta para te atender.</p>
+        
+        <div class="support-cards">
+            <div class="support-card disabled">
+            <img src="https://img.icons8.com/color/48/whatsapp--v1.png" alt="WhatsApp">
+            <h3>WhatsApp</h3>
+            <p>Estamos preparando nosso canal de atendimento exclusivo.</p>
+             <span class="coming-soon">EM BREVE</span>
+        </div>
+            </a>
+
+            <a href="mailto:suporte@trinityvibe.com.br" class="support-card">
+                <img src="https://img.icons8.com/fluency/48/mail.png" alt="E-mail">
+                <h3>E-mail</h3>
+                <p>Respondemos em até 24h úteis</p>
+                <span>Enviar mensagem</span>
+            </a>
+        </div>
+    </div>
+</section>
+
 <footer>
     <div class="footer-container">
         <div class="security-badges">
             <img src="https://img.icons8.com/color/48/visa.png" alt="Visa">
             <img src="https://img.icons8.com/color/48/mastercard.png" alt="Mastercard">
             <img src="https://img.icons8.com/color/48/pix.png" alt="Pix">
-            <img src="https://img.icons8.com/ios-filled/50/22C55E/shield.png" alt="Site Seguro" style="width: 30px;">
-            <p>Pagamento Seguro via <strong>Appmax</strong></p>
+            <img src="https://img.icons8.com/ios-filled/50/22C55E/shield.png" alt="Site Seguro" style="width: 25px;">
+            <p>Pagamentos processados com segurança pela 
+                <a href="https://appmax.com.br" target="_blank" class="appmax-link">
+                    <strong>Appmax</strong>
+                </a>
+            </p>
         </div>
 
+        <hr class="footer-divider">
+
         <div class="footer-info">
+            <p class="footer-email">
+                <strong>E-mail de Suporte:</strong> 
+                <a href="mailto:suporte.trinityvibe@gmail.com">suporte.trinityvibe@gmail.com</a>
+            </p>
+            <p>Porto Alegre, RS | TrinityVibe Store</p>
             <p>© 2026 TrinityVibe - Todos os direitos reservados.</p>
-            <p>Porto Alegre, RS | CNPJ: 56.944.277/0001-27</p> <p><a href="#">Termos de Uso</a> | <a href="#">Política de Privacidade</a></p>
+            <p class="legal-links"><a href="#">Termos de Uso</a> | <a href="#">Políticas de Privacidade</a></p>
+            <p>CNPJ: 56944277000127</p>
         </div>
     </div>
 </footer>
