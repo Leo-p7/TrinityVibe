@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rastreio de Pedido | TrinityVibe</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="main-header">
+    <div class="header-container">
+        <h1 class="logo text-gradient">TrinityVibe</h1>
+
+        <nav class="main-menu">
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="rastreio.html">Rastreio</a></li>
+                <li><a href="suporte.html">Suporte</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main class="tracking-card">
+    <h2>Acompanhe seu pedido</h2>
+    <p>
+        Insira abaixo o código de rastreamento enviado por e-mail após a confirmação da compra.
+    </p>
+
+    <form action="https://rastreamento.correios.com.br/app/index.php" method="get" target="_blank">
+        <input 
+            type="text" 
+            name="objeto" 
+            placeholder="Ex: LB123456789BR" 
+            required
+        >
+        <button type="submit">Rastrear pedido</button>
+    </form>
+</main>
+
+<footer class="footer">
+    <p>© 2026 TrinityVibe · Porto Alegre, RS</p>
+</footer>
+
+</body>
+</html>

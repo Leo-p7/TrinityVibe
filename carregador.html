@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>W-69 Pro Max Ultra | TrinityVibe</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="main-header">
+    <div class="header-container">
+        <h1 class="logo text-gradient">TrinityVibe</h1>
+
+        <nav class="main-menu">
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="produtos.html">Produtos</a></li>
+                <li><a href="rastreio.html">Rastreio</a></li>
+                <li><a href="suporte.html">Suporte</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main class="product-page">
+
+    <!-- GALERIA -->
+    <section class="product-gallery-page">
+        <img 
+  src="carregadorimg/img5.avif" 
+  id="mainImage"
+  class="main-image" 
+  alt="Carregador por indução YD-16">
+
+
+    <div class="thumbs">
+        <img src="carregadorimg/img1.avif" onclick="changeImage(this)">
+        <img src="carregadorimg/img2.avif" onclick="changeImage(this)">
+        <img src="carregadorimg/img4.avif" onclick="changeImage(this)">
+        <img src="carregadorimg/img5.avif" onclick="changeImage(this)"
+    </div>
+
+    </section>
+
+    <!-- INFO -->
+    <section class="product-details">
+        <h2>Carregador por indução YD-16</h2>
+        <p class="product-short">
+            Base Turbo Wireless 15W
+            Modelo YD16 | Dobrável | Homologado ANATEL        </p>
+
+        <div class="price-box">
+            <span class="old-price">R$ 95,90</span>
+            <span class="current-price">R$ 85,00</span>
+        </div>
+
+        <a href="https://trinityvibe.pay.yampi.com.br/r/GHXWFSRSUH"
+           class="buy-btn">
+           Comprar agora
+        </a>
+
+        <div class="product-trust">
+            <span>🚚 Frete para todo o Brasil</span>
+            <span>🔒 Pagamento seguro</span>
+            <span>🛡 Garantia de 7 dias</span>
+        </div>
+    </section>
+
+</main>
+
+<!-- DESCRIÇÃO -->
+<section class="product-description">
+    <h3>Descrição do produto</h3>
+    <p>
+        O Carregador Sem Fio Indução 15W com Suporte Vertical é a solução ideal para quem quer praticidade e eficiência no carregamento do celular sem usar cabos. Com tecnologia de carregamento por indução compatível com o padrão Qi, basta colocar seu smartphone sobre o suporte para iniciar a recarga de forma rápida e segura — sem complicações.
+
+Esse modelo possui cabo incluso e oferece potência de até 15W, proporcionando carregamento rápido em dispositivos compatíveis, como iPhones (12, 13, 14 e modelos compatíveis Qi) e aparelhos Samsung S20 e superiores.
+
+O relógio fica em uma posição vertical prática que permite usar a tela enquanto carrega, ideal para manter o celular acessível na mesa de trabalho ou ao lado da cama.
+
+Esse carregador também conta com proteções internas contra:
+
+Sobretensão
+
+Sobrecorrente
+
+tornando o uso mais seguro para seus dispositivos.
+
+Características principais:
+
+Compatível com carregamento sem fio padrão Qi
+
+Suporte vertical para melhor visualização da tela
+
+Inclui cabo USB
+
+Compatível com diversos modelos de smartphones com Qi
+
+Entrada 110V/220V com saída de 15W máxima
+
+Design compacto e funcional
+
+Proteções internas contra sobretensão e sobrecorrente
+    </p>
+
+    <ul>
+        <li>Tela AMOLED 2.02"</li>
+        <li>GPS e NFC integrados</li>
+        <li>Resistência à água 5ATM</li>
+        <li>Monitoramento Completo e Avançado de Saúde</li>
+        <li>Bateria de longa duração</li>
+        <li>Compatível com Android</li>
+        <li>Comando de Voz</li>
+        <li> Caixa em Titânio Prateado</li>
+
+    </ul>
+</section>
+
+<footer class="footer">
+    <p>© 2026 TrinityVibe · Porto Alegre, RS</p>
+</footer>
+
+
+
+<script>
+function changeImage(element) {
+    const mainImage = document.getElementById('mainImage');
+    mainImage.src = element.src;
+
+    // remove ativo de todas
+    document.querySelectorAll('.thumbs img').forEach(img => {
+        img.classList.remove('active');
+    });
+
+    // adiciona ativo na clicada
+    element.classList.add('active');
+}
+</script>
+
+</body>
+</html>
