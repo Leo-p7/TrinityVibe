@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amplificador de tela | TrinityVibe</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="main-header">
+    <div class="header-container">
+        <h1 class="logo text-gradient">TrinityVibe</h1>
+
+        <nav class="main-menu">
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="produtos.html">Produtos</a></li>
+                <li><a href="rastreio.html">Rastreio</a></li>
+                <li><a href="suporte.html">Suporte</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main class="product-page">
+
+    <!-- GALERIA -->
+    <section class="product-gallery-page">
+
+    <div class="main-media">
+        <!-- vídeo -->
+        <video
+            id="mainVideo"
+            class="main-video-local"
+            src="ampliadorimg/ampliadorvideo.mp4"
+            autoplay
+            muted
+            loop
+            playsinline>
+        </video>
+
+        <!-- imagem grande -->
+        <img
+            id="mainImage"
+            src="ampliadorimg/ampli2.webp"
+            style="display:none;"
+            alt="Amplificador de tela">
+    </div>
+
+    <div class="thumbs">
+    <img src="ampliadorimg/ampli2.webp" onclick="showImage(this.src)">
+    <img src="ampliadorimg/ampli3.webp" onclick="showImage(this.src)">
+    <img src="ampliadorimg/ampli4.webp" onclick="showImage(this.src)">
+    <img src="ampliadorimg/ampli1.webp" onclick="showImage(this.src)">
+
+    <!-- thumb do vídeo -->
+    <div class="video-thumb" onclick="showVideo()">
+        ▶ Vídeo
+    </div>
+</div>
+
+
+</section>
+
+
+    <!-- INFO -->
+    <section class="product-details">
+        <h2>Ampliador de tela HD 3D</h2>
+        <p class="product-short">
+            Perfeito para filmes, vídeos e jogos - Com suporte para celulares.
+        </p>
+
+        <div class="price-box">
+            <span class="old-price">R$ 30,00</span>
+            <span class="current-price">R$ 27,50</span>
+           
+
+        <a href="https://trinityvibe.pay.yampi.com.br/r/QIOSRZBGOS"
+           class="buy-btn">
+           Comprar agora
+        </a>
+
+        <div class="product-trust">
+            <span>🚚 Frete para todo o Brasil</span>
+            <span>🔒 Pagamento seguro</span>
+            <span>🛡 Garantia de 7 dias</span>
+        </div>
+    </section>
+
+</main>
+
+<!-- DESCRIÇÃO -->
+<section class="product-description">
+    <h3>Descrição do produto</h3>
+    <p>
+        Transforme a forma como você assiste filmes e séries.
+        O Amplificador de tela 3D, aumenta a imagem do seu smartphone em até 3x, proporcionando uma 
+        experência muito mais confortavel para assistir filmes, séries, Youtube, tiktok e muito mais
+        sem forçar a visão.
+    </p>
+
+    <ul>
+        <li>Ampliação de tela em até 3x</li>
+        <li>Tecnologia óptica 3D e HD (não distorce a imagem)</li>
+        <li>Reduz o cansaço visual</li>
+        <li>Não precisa de energia ou bateria</li>
+        <li>Leve, dobrável e portátil</li>
+        <li>Compativel com qualquer celular (Android ou iphone)</li>
+
+    </ul>
+
+    <h4>Ideal para:</h4>
+
+    <ul class="features-list">
+        <li><i class="fa-solid fa-film"></i> Assistir filmes e séries</li>
+        <li><i class="fa-solid fa-play"></i> YouTube, TikTok e Reels</li>
+        <li><i class="fa-solid fa-graduation-cap"></i> Aulas online</li>
+        <li><i class="fa-solid fa-video"></i> Chamadas de vídeo</li>
+        <li><i class="fa-solid fa-suitcase-rolling"></i> Viagens e uso diário</li>
+    </ul>
+
+</section>
+
+<footer class="footer">
+    <p>© 2026 TrinityVibe · Porto Alegre, RS</p>
+</footer>
+
+
+<script>
+function showImage(src) {
+    const video = document.getElementById('mainVideo');
+    const image = document.getElementById('mainImage');
+
+    video.pause();
+    video.style.display = 'none';
+
+    image.src = src;
+    image.style.display = 'block';
+}
+
+function showVideo() {
+    const video = document.getElementById('mainVideo');
+    const image = document.getElementById('mainImage');
+
+    image.style.display = 'none';
+
+    video.style.display = 'block';
+    video.play();
+}
+</script>
+
+
+</body>
+</html>
